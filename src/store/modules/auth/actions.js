@@ -13,7 +13,7 @@ export default {
 
     if(!response.ok) {
       console.log(responseData);
-      const error = new Error(responseData.message || 'Failed to authenticate!');
+      const error = new Error(responseData.message || 'Failed to authenticate! Check your log in data.');
       throw error;
     }
     console.log(responseData);
